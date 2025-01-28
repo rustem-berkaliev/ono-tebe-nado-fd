@@ -60,10 +60,8 @@
 }
 
 .contact-info-link {
-    /*text-decoration: underline;*/
     text-underline-position: under;
     font-size: 18px;
-
 }
 
 .cover {
@@ -88,7 +86,7 @@
     line-height: 115px;
     color: white;
     text-transform: uppercase;
-    padding: 165px 50px;
+    padding: 165px 50px 0 50px;
     gap: 20px;
     position: relative;
     display: flex;
@@ -114,7 +112,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    margin: -60px 50px 50px 50px;/*Отрицательные отступы нарушают выравнивание*/
+    margin: 105px 50px 50px 50px;
     width: 1000px;
     min-height: 51px;
 }
@@ -178,9 +176,10 @@ h2 {
 
 .lots-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-}/*При добавлении карточек они должны переноситься на другую строчку. Используйте flex-wrap https://doka.guide/css/flex-wrap/*/
+}
 
 .lot-item {
     display: flex;
@@ -190,7 +189,7 @@ h2 {
     background-position: center;
     background-size: cover;
     position: relative;
-}/*Содержимое каждой карточки необходимо расположить по макету флекс-свойствами, без использования жестких отступов. Используйте justify-content и align-items */
+}
 
 .lot-item__title {
     font-size: 22px;
@@ -204,10 +203,23 @@ h2 {
     margin-top: 48px;
 }
 
+.card-content__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+    align-self: flex-end;
+}
+
 .content__text {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 25px;
+}
+
+.description__block {
+    margin-top: 70px;
 }
 
 .lot-card__grid {
@@ -221,14 +233,6 @@ h2 {
     margin-right: 40px;
     margin-bottom: 48px;
     display: flex;
-}
-
-.text__margin__bottom {
-    align-self: flex-end;
-}
-
-.color-text__white {
-    color: white;
 }
 
 .more {
@@ -245,9 +249,9 @@ h2 {
     grid-template-columns: 287px 2fr;
     gap: 72px;
     width: 1052px;
-    /*height: 595px;!*Высоту надо удалить у блока*!*/
+    /*height: 595px;*/
     margin-top: 130px;
-    margin-bottom: 170px;
+    margin-bottom: 180px;
     margin-left: 24px;
 }
 
@@ -279,14 +283,6 @@ h2 {
 
 .about__title {
     margin-top: 20px;
-}
-
-.par__offset {
-    margin-top: 100px;
-}
-
-.par2__offset {
-    margin-top: 30px;
 }
 
 .social-networks-image {
